@@ -1,0 +1,498 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    user-select: none;
+    -webkit-user-select: text;
+}
+
+body {
+    background-color: hsla(0, 0%, 0%, 0.938) !important;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, sans-serif;
+}
+
+/* global class */
+.hamburgerNav {
+    display: none !important;
+}
+
+.active {
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bgcolor {
+    background-color: rgb(20, 20, 20);
+}
+
+/* global class end */
+
+/* banner */
+.bannerSec {
+    /* background-image: url(https://image.tmdb.org/t/p/original/xDMIl84Qo5Tsu62c9DGWhmPI67A.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position: 69%;
+    position: relative;
+}
+
+.bannerCont {
+    display: flex;
+    max-width: 100%;
+    /* width: fit-content; */
+    bottom: 0;
+    padding-left: 10px;
+    left: 20px;
+    flex-direction: column;
+    position: absolute;
+    height: 70%;
+    z-index: 9;
+    /* position: relative; */
+}
+
+.bannerTitle {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    max-width: 70%;
+    position: relative;
+}
+
+.bannerOverview {
+    font-size: 16.4px;
+    line-height: 1.3;
+    width: 40%;
+}
+
+.releaseBanner {
+    font-size: 16.4px;
+    line-height: 1.3;
+    width: 40%;
+}
+
+.ratingBanner {
+    font-size: 16.4px;
+    line-height: 1.3;
+    width: 40%;
+}
+
+.btnCont {
+    display: flex;
+    align-items: center;
+}
+
+.btnCont a .actionButton {
+    border: none;
+    background-color: #fff !important;
+    padding: 8px 23px;
+    border-radius: 4px;
+    margin-right: 11px;
+    color: black !important;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnCont a:last-child .actionButton {
+    background-color: rgba(109, 109, 110, 0.7) !important;
+    color: white;
+}
+
+.actionButton svg path {
+    color: black;
+}
+
+.bannerLogo {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+}
+
+.bannerLogo img {
+    width: 100%;
+}
+
+.bannerFadeBottom {
+    height: 120px;
+    background: linear-gradient(180deg, transparent, rgba(37, 37, 37, .61), #141414);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.bannerFadeLeft {
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(37, 37, 37, .61), #141414);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* banner end */
+
+
+
+
+/* movie sec  */
+.movieSec {
+    display: flex;
+    overflow: scroll;
+}
+
+.gerneCont {
+    /* display: flex; */
+    margin: 2rem 0;
+    /* overflow: scroll; */
+}
+
+.movieHold {
+    display: flex;
+
+}
+
+.gerneHeading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s !important;
+    /* display: block !important; */
+    /* margin-bottom: 1rem; */
+}
+
+.gerneHeading .exploreNow {
+    font-size: 0.8rem;
+    color: #54b9c5;
+    display: none;
+    margin-left: 0.5rem;
+    transition: all 0.3s !important;
+}
+
+.gerneHeading:hover .exploreNow {
+    display: inline-block;
+    transition: all 0.3s !important;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.movieCont {
+    display: flex;
+    /* overflow-x:auto; */
+    /* overflow-y: visible; */
+}
+
+.movieRow {
+    /* width: fit-content; */
+    overflow: scroll;
+    /* border: 2px solid white; */
+    transition: all 0.3s;
+}
+
+.movieRow:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.movieRowItem img {
+    width: 12rem;
+    object-fit: contain;
+    margin-right: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* transition: all 0.5s; */
+}
+
+.movieList {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem 2rem;
+}
+
+.movieRowItem p {
+    display: none;
+}
+
+.movieRowItem:hover .trailer {
+    display: block;
+}
+
+.movieControlCont {
+    /* border: 1px solid red; */
+    background-color: #141414;
+    width: 100%;
+    display: none;
+    transition: all 0.3s;
+
+}
+
+.movieRow:hover .movieControlCont {
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.movieControlCont div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.movieTitle p:last-child {
+    border: 2px solid black;
+    padding: 10px 10px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+
+.movieControl i {
+    border: 1px solid grey;
+    border-radius: 100px;
+    padding: 10px 12px;
+    transition: all 0.2s;
+    background-color: #141414;
+    cursor: pointer;
+}
+
+.movieControl i:first-child {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.movieControl i:hover {
+    border-color: white;
+    transition: all 0.2s;
+}
+
+.releaseDate {
+    text-align: center;
+}
+
+/* movie sec end */
+
+/* explore now section */
+.exploreNowCon {
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+}
+
+/* explore now section end */
+
+/* movie play .jsx */
+.movieCont {
+    display: flex;
+}
+
+.movieCont .movieDetailCont {
+    width: 50%;
+    background-color: #141414;
+    height: 100vh;
+    padding: 1rem 2rem;
+}
+
+.movieDetailCont .titleCont h2 {
+    font-size: 3rem;
+}
+
+.titleCont p {
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.movieDetailCont .controlsCont {
+    padding: 0rem 2rem;
+}
+
+.controlsCont h2 {
+    cursor: pointer;
+    margin: 3rem 0;
+    border: 1px solid white;
+    padding: 1rem;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+}
+
+.controlsCont h2:hover {
+    letter-spacing: 2px;
+    transition: all 0.2s;
+    background-color: rgba(128, 128, 128, 0.555);
+}
+
+.movieCont .movieImgCont {
+    width: 50%;
+    /* background-color: green; */
+    position: relative;
+    height: 100vh;
+    /* background-image: url("https://image.tmdb.org/t/p/original/sv1xJUazXeYqALzczSZ3O6nkH75.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 69%;
+}
+
+#Img {
+    /* background-image: url('https://image.tmdb.org/t/p/original/3CxUndGhUcZdt1Zggjdb2HkLLQX.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.movieImgCont figure img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* fade effetc */
+.fadeLeft {
+    height: 120px;
+    background: linear-gradient(270deg, transparent, rgba(37, 37, 37, .61), #141414);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+/* credits section */
+#credits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+
+}
+#creditHeading{
+    margin-left: 2rem;
+}
+
+#credits .creditCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creditCont figure {
+    border-radius: 100%;
+    /* background-image: url("https://image.tmdb.org/t/p/original/43SgANYtj7vpsHmz68hgPDlxC15.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    height: 20rem;
+
+}
+
+.creditCont h2 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.creditCont h4 {
+    border-bottom: 1px dotted white;
+}
+
+/* #similar{
+    background-color: red;
+} */
+/* credits section end */
+
+/* movie play .jsx end */
+/* playing movie */
+#trailerLink {
+    width: 100vw;
+    height: 99vh;
+    border: none;
+}
+
+/* playing movie end */
+
+
+/*  hamburger menu */
+header {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger_icon i {
+    font-size: 2rem;
+    display: none;
+    transition: all 0.3s;
+
+}
+.addToList{
+    display: none;
+}
+
+.hamburgerMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: #141414;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s;
+    display: none;
+}
+
+.hamburgerMenu i {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.hamburgerMenu .hamburgerCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburgerMenu .hamburgerCont .leftNavCont {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    
+}
+
+.hamburgerMenu .hamburgerCont .leftNavCont a {
+    color: grey;
+    margin: 1rem 0;
+
+}
+
+.hamburgerMenu .hamburgerCont .leftNavCont a:hover {
+    color: white !important;
+    transition: all 0.3s;
+}
+
+.hamburgerMenu .hamburgerCont .user{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.4rem;
+}
+.hamburgerMenu .hamburgerCont #signOut p{
+    width: 20vw;
+    text-align: center;
+}

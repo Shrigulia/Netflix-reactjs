@@ -1,0 +1,388 @@
+@media screen and (max-width: 1300px) {
+    #movieCredit {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1183px) {
+    #movieCredit {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #movieCredit {
+        max-width: 1065px;
+    }
+
+    .creditCont figure {
+        width: 13rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .movieControlCont {
+        display: none;
+    }
+    #similar div div div div div .movieControlCont{
+        display: none;
+    }
+    #similar div div div div div:hover{
+        transform: scale(1);
+    }
+    #movieSec .movieList .movieCont .movieRow .movieControlCont{
+        display: none;
+    }
+    #movieSec .movieList .movieCont .movieRow:hover{
+        transform: scale(1);
+    }
+    #exploreAllSec .infinite-scroll-component__outerdiv .infinite-scroll-component .exploreNowCon .movieCont .movieControlCont{
+        display: none;
+    }
+    #exploreAllSec .infinite-scroll-component__outerdiv .infinite-scroll-component .exploreNowCon .movieCont .movieRow:hover{
+        transform: scale(1);
+
+    }
+    .addToList {
+        display: block;
+    }
+    .controlsCont h2:hover {
+        letter-spacing: 0px;
+        transition: all 0.2s;
+        background-color: black;
+    }
+    #myListSec .exploreNowCon .movieCont .movieRow .movieControlCont{
+        display: none;
+    }
+    #myListSec .exploreNowCon .movieCont .movieRow:hover{
+        transform: scale(1);
+    }
+    .exploreNowCon{
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 867px) {
+    .bannerTitle {
+        font-size: 39px;
+        line-height: 0;
+    }
+
+    .container {
+        max-width: 845px;
+    }
+
+    .movieDetailCont .titleCont h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 777px) {
+    .bannerTitle {
+        font-size: 36px;
+    }
+
+    .creditCont figure {
+        width: 10rem;
+        height: 11rem;
+    }
+
+    .movieDetailCont .controlsCont {
+        padding: 0rem 0rem;
+    }
+
+    .hamburgerMenu {
+        width: 36vw;
+    }
+
+    .hamburgerMenu .hamburgerCont .user {
+        width: 36vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.4rem;
+    }
+
+    .hamburgerMenu .hamburgerCont #signOut p {
+        width: 36vw;
+        text-align: center;
+    }
+
+    .bannerOverview {
+        font-size: 12.4px;
+    }
+
+    .bannerSec {
+        height: 64vh;
+    }
+
+    .container {
+        max-width: 760px;
+    }
+
+    .movieRowItem img {
+        width: 9rem;
+    }
+
+    .leftNavCont {
+        display: none;
+    }
+
+    .rightNav {
+        display: none !important;
+    }
+
+    .hamburger_icon i {
+        font-size: 2rem;
+        display: block;
+    }
+
+    /* here comes the hmburger */
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .bannerTitle {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .releaseBanner {
+        font-size: 14.4px;
+        line-height: 1;
+        width: 47%;
+    }
+
+    .bannerOverview {
+        width: 53%;
+    }
+
+    .container {
+        max-width: 660px;
+    }
+
+    .movieRowItem img {
+        width: 7rem;
+    }
+
+    .leftNavCont {
+        display: none;
+    }
+
+    .rightNav {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 677px) {
+    .titleCont p {
+        font-size: 0.7rem;
+    }
+
+    .controlsCont h2 {
+        margin: 3rem 0;
+        padding: 0.5rem;
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .titleCont h2 {
+        font-size: 1.6rem;
+    }
+
+    .titleCont p {
+        font-size: 0.6rem;
+    }
+
+    .controlsCont h2 {
+        padding: 0.4rem;
+        font-size: 1rem;
+    }
+
+    .creditCont figure {
+        width: 7rem;
+        height: 8rem;
+    }
+
+    #credits .creditCont {
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (max-width: 513px) {
+    .titleCont h2 {
+        font-size: 1.4rem;
+    }
+
+    .creditCont h2 {
+        font-size: 1rem;
+    }
+
+    .creditCont h4 {
+        font-size: 1rem;
+        border-bottom: 1px dotted white;
+    }
+
+    .titleCont p {
+        font-size: 0.5rem;
+    }
+
+    .hamburgerMenu {
+        width: 50vw;
+    }
+
+    .bannerOverview {
+        font-size: 10px;
+        line-height: 1.1;
+        width: 63%;
+    }
+
+    .container {
+        max-width: 550px;
+    }
+
+    .movieRowItem img {
+        width: 6rem;
+    }
+
+    .gerneHeading {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-left: 0.3rem;
+    }
+
+    .leftNavCont {
+        display: none;
+    }
+
+    .rightNav {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .movieDetailCont .titleCont h2 {
+        font-size: 1.2rem;
+    }
+
+    .titleCont p {
+        letter-spacing: 0px;
+    }
+
+    .controlsCont h2 {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .movieDetailCont .titleCont h2 {
+        font-size: 1rem;
+    }
+
+    .creditCont figure {
+        width: 5rem;
+        height: 6rem;
+    }
+
+    #credits .creditCont {
+        margin: 0 0.3rem;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .hamburgerMenu {
+        width: 55vw;
+    }
+
+    .hamburgerMenu .hamburgerCont .user {
+        width: 55vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.4rem;
+    }
+
+    .hamburgerMenu .hamburgerCont #signOut p {
+        width: 55vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .movieRowItem img {
+        width: 5rem;
+    }
+
+    .gerneHeading {
+        font-size: 0.7rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-left: 0.5rem;
+    }
+
+    .creditCont h4 {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    .hamburgerMenu {
+        width: 70vw;
+    }
+
+    .hamburgerMenu .hamburgerCont .user {
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.4rem;
+    }
+
+    .hamburgerMenu .hamburgerCont #signOut p {
+        width: 70vw;
+        text-align: center;
+    }
+
+    .creditCont figure {
+        width: 5rem;
+        height: 6rem;
+    }
+
+    #credits .creditCont {
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (max-width: 246px) {
+    .hamburgerMenu {
+        width: 80vw;
+    }
+
+    .hamburgerMenu .hamburgerCont .user {
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.4rem;
+    }
+
+    .hamburgerMenu .hamburgerCont #signOut p {
+        width: 80vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 286px) {
+    .btnCont a .actionButton {
+        padding: 7px 13px;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+
+    .movieRowItem img {
+        width: 4rem;
+    }
+}

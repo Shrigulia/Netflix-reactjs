@@ -1,0 +1,48 @@
+import { createReducer } from "@reduxjs/toolkit";
+import { toast } from "react-hot-toast";
+
+export const mylistReducer = createReducer(
+    { myList: [] },
+    {
+        addToList: (state, action) => {
+            const item = action.payload;
+            const isItemExist = state.myList.find((i) => i.id === item.id);
+            if (isItemExist) {
+                toast.success("Already Added", {
+                    style: {
+                        background: "#f11946",
+                        color: "white",
+                        fontWeight: 700,
+                    },
+                });
+            } else {
+                state.myList.push(item);
+                toast.success("Added To Your list");
+            }
+        },
+        clearList: (state) => {
+            if (state.myList.length > 0) {
+                state.myList = [];
+                toast.success("My List Cleared");
+            } else {
+                toast.success("List is Empty", {
+                    style: {
+                        background: "#f11946",
+                        color: "white",
+                        fontWeight: 700,
+                    },
+                });
+            }
+        },
+        deleteFromList: (state, action) => {
+            state.myList = state.myList.filter((i) => i.id !== action.payload);
+            toast.success("Removed", {
+                style: {
+                    background: "#f11946",
+                    color: "white",
+                    fontWeight: 700,
+                },
+            });
+        },
+    }
+);
