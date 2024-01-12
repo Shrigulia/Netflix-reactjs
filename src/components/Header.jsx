@@ -53,7 +53,7 @@ const Header = ({ pos }) => {
                         </figure>
                         <ul className="leftNavCont">
                             <NavLink className={({ isActive }) => (isActive ? "active" : "")} to='/'>Home</NavLink>
-                            <NavLink className={({ isActive }) => (isActive ? "active" : "")} to='/movies'>Movies</NavLink>
+                            <NavLink className={({ isActive }) => (isActive ? "active" : "")} to='/movies'>Films</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "active" : "")} to='/mylist'>My List</NavLink>
                         </ul>
                     </nav>
