@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './components/Home';
 import Movie from './components/Movie.jsx';
 import LoadingBar from 'react-top-loading-bar';
@@ -21,7 +21,7 @@ const App = () => {
   return (
     <Router>
       <LoadingBar height={2} color='#f11946' progress={progress} />
-      <Switch>
+      <Routes>
         <Route exact path='/' element={<Home setProgress={setProgresss} />} />
         <Route exact path='/:id/:name' element={<Explore setProgress={setProgresss} />} />
         <Route exact path='/:id' element={<MoviePlay setProgress={setProgresss} />} />
@@ -29,7 +29,7 @@ const App = () => {
         <Route exact path='/movies' element={<Movie setProgress={setProgresss} />} />
         <Route exact path='/mylist' element={<MyList setProgress={setProgresss} />} />
         {/* <Route exact path='/tvShow' element={<TvShow setProgress={setProgresss} />} /> */}
-      </Switch>
+      </Routes>
       {/* <ToastContainer autoClose={1000} position='top-center' /> */}
       <Toaster />
 
