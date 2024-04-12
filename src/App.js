@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './components/Home';
 import Movie from './components/Movie.jsx';
@@ -17,7 +17,15 @@ import MyList from './components/MyList';
 
 const App = () => {
   const [progress, setProgresss] = useState(0)
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
   return (
     <Router>
       <LoadingBar height={2} color='#f11946' progress={progress} />
