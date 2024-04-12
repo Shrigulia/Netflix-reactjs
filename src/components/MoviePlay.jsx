@@ -22,16 +22,16 @@ const MoviePlay = (props) => {
     const [totalResult, setTotalResult] = useState(0);
 
 
-    let params = useParams();
+    let { id } = useParams();
 
     const dispatch = useDispatch();
 
     const apiKey = "d5e4056f097f2068ae5f44246666ab84"
     const apiDomain = "https://api.themoviedb.org/3/"
     const apiPath = {
-        fetchMovieDetail: `${apiDomain}movie/${params.id}?api_key=${apiKey}&language=en-US`,
-        fetchCredits: `${apiDomain}movie/${params.id}/credits?api_key=${apiKey}&language=en-US`,
-        fetchSimilar: `${apiDomain}movie/${params.id}/similar?api_key=${apiKey}&language=en-US&page=${page}`
+        fetchMovieDetail: `${apiDomain}movie/${id}?api_key=${apiKey}&language=en-US`,
+        fetchCredits: `${apiDomain}movie/${id}/credits?api_key=${apiKey}&language=en-US`,
+        fetchSimilar: `${apiDomain}movie/${id}/similar?api_key=${apiKey}&language=en-US&page=${page}`
     }
     const imgPath = "https://image.tmdb.org/t/p/original";
 
