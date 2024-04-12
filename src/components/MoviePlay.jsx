@@ -53,7 +53,7 @@ const MoviePlay = (props) => {
             props.setProgress(100)
         }
         fetchMovieDetail();
-    }, [apiPath.fetchCredits, apiPath.fetchMovieDetail])
+    }, [apiPath.fetchCredits, apiPath.fetchMovieDetail, id])
 
     const fetchdata = async () => {
         setPage(page + 1);
