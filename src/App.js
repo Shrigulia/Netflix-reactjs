@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './components/Home';
 import Movie from './components/Movie.jsx';
 import LoadingBar from 'react-top-loading-bar';
