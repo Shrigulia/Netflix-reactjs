@@ -92,7 +92,7 @@ const MoviePlay = (props) => {
     return (
         <>
             <Header pos={'sticky'} />
-            <MoviePlayCard name={name} img={img} desc={desc} id={params.id} handler={addToListHandler} rating={rating} release={release}  />
+            <MoviePlayCard name={name} img={img} desc={desc} id={useParams.id} handler={addToListHandler} rating={rating} release={release}  />
 
             <section id='movieCredit' className='container'>
                 <h2 id='creditHeading' className='gerneHeading' style={{ marginTop: '6rem', fontSize: '2rem' }}> Credits</h2>
